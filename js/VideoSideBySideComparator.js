@@ -19,12 +19,12 @@ class VideoSideBySideComparator {
    * @param {string} config.videoGroups[].right.logo - Optional logo image URL
    * @param {string} config.videoGroups[].right.details - Right side details text
    * @param {Array} config.videoGroups[].contextImages - Optional array of context images
-   * @param {number} config.zoomFactor - Zoom factor (default: 4)
+   * @param {number} config.zoomFactor - Zoom factor (default: 2)
    */
   constructor(container, config) {
     this.container = container;
     this.videoGroups = config.videoGroups || [];
-    this.zoomFactor = config.zoomFactor || 4;
+    this.zoomFactor = config.zoomFactor || 2;
     this.currentGroupIndex = 0;
     this.isVisible = true;
 
